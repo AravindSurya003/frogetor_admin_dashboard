@@ -10,8 +10,8 @@ import StartPage from './mainpage.jsx';
 createRoot(document.getElementById('rootmain')).render(
   <HashRouter>
     <Routes>
-      <Route path='/' element={<StartPage/>} />
       <Route path='/login' element={<LoginPage />} />
+      <Route path='/' element={<StartPage/>} />
     </Routes>
   </HashRouter>
 )
