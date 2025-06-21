@@ -5,13 +5,13 @@ import './index.css'
 import App from './App.jsx'
 import LoginPage from './Login.jsx'
 import { HashRouter, Route, Router, Routes } from 'react-router'
-import StartPage from './mainpage.jsx';
+import Home from './App.jsx';
 
 createRoot(document.getElementById('rootmain')).render(
   <HashRouter>
     <Routes>
-      <Route path='/login' element={<LoginPage />} />
-      <Route path='/' element={<StartPage/>} />
+      {/* <Route path='/login' element={<LoginPage />} /> */}
+      <Route path='/' element={<Home/>} />
     </Routes>
   </HashRouter>
 )
